@@ -1,0 +1,19 @@
+.icon{
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.icon--pos{
+    margin-bottom: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: block;
+}
+.icon__text--white{
+    color:var(--main-text-color);
+}

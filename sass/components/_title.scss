@@ -1,0 +1,49 @@
+.hero__title{
+    color: var(--main-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+}
+.product__title{
+    color: var(--second-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.33;
+    text-transform: uppercase;
+}
+.section__title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    color:var(--second-text-color);
+    text-align: center;
+}
+.section__title--position{
+    margin-bottom: 50px;
+}
+.team__title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    color:var(--second-text-color);
+    margin-bottom: 10px;
+}
+.footer__title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.33;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.port__title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    color:var(--second-text-color);
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+}
