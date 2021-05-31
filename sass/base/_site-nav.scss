@@ -61,12 +61,12 @@
         right: 0;
     }
 }
-.site-nav__link--color:not(:last-child){
+.site-nav__link--pos{
     @media screen and (min-width:1200px){
-        margin-right: 50px; 
+    margin-right: 50px;
     }
-    
-}
+} 
+ 
 .site-nav__mobile{
     display: block;
     margin-top: 48px;
