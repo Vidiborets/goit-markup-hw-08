@@ -12,6 +12,19 @@
 </head>
 <body>
     <!--Header content-->
+    <section class="section section--mobile">
+        <div class="container">
+            <div class="header__mobile">
+                <a class="icon" href="./index.html"><span class="icon__text">Web</span>Studio</a>
+                    <button type="button" class="mobile__button is-open" data-menu-button aria-controls="mobile-menu" aria-expanded="false">
+                        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                            <use class="header__svg is-open" href="./images/icons.svg#icon-burger"></use>
+                            <use class="mobile__svg is-open" href="./images/icons.svg#icon-burger-close"></use>
+                        </svg>
+                    </button>
+            </div>
+        </div>
+    </section>
         <header class="header-content">
             <div class="container">
                 <a class="icon" href="./index.html"><span class="icon__text">Web</span>Studio</a>
@@ -65,10 +78,10 @@
                         <button class="port__link" type="button">Приложения</button>
                     </li>
                     <li class="port__item">
-                        <button class="port__link" type="button">Дизайн</button>
+                        <button class="port__link port__item--position" type="button">Дизайн</button>
                     </li>
                     <li class="port__item">
-                        <button class="port__link" type="button">Маркетинг</button>
+                        <button class="port__link port__item--position" type="button">Маркетинг</button>
                     </li>
                 </ul>
                 <!--Our product-->
@@ -217,7 +230,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="card-set__item card-set__item--mod">
+                    <li class="card-set__item card-set__item--mod card-set__item--bottom">
                         <a class="card-set__link" href="">
                             <div class="techno__card">
                                 <img src="./images/macboock.jpg" alt="Ультрабук">
@@ -242,7 +255,7 @@
     <!--Footer content-->
     <footer class="footer">
         <div class="container container--footer">
-            <div>
+            <div class="section--footer">
                 <a class="icon icon--pos" href="">
                     <span class="icon__text">Web</span><span class="icon__text--white">Studio</span></a>
                 <address class="footer__content">
@@ -257,7 +270,7 @@
                     </ul>
                 </address>
             </div>
-            <div class="section-footer">
+            <div class="section--footer">
                 <p class="footer__title">присоединяйтесь</p>
                     <ul class="list social__list">
                         <li class="social__item">
@@ -290,14 +303,14 @@
                         </li>
                     </ul>
                 </div>
-            <div>
+            <div class="section__footer--subscrib">
                 <p class="footer__title">Подпишитесь на рассылку</p>
-                <div>
-                    <form class="container--footer">
+                <div class="footer__block">
+                    <form class="footer__form">
                         <label class="footer__label">
                             <input class="footer__input" type="email" name="subscribe" placeholder="E-mail">
                         </label>
-                    <div>
+                    <div class="footer__button">
                         <button class="hero__button hero__button--pos" type="submit">Подписаться
                             <svg class="hero__button--send" width="24" height="24">
                                 <use href="./images/icons.svg#icon-send"></use>
@@ -309,5 +322,51 @@
             </div>
         </div>
     </footer>
+    <div class="mobile__block is-open" data-menu>
+        <div class="moblie-content">
+            <nav class="nav">
+                <ul class="site-nav site-nav__mobile list">
+                    <li class="site-nav__item site-nav__mobile-item">
+                        <a class="site-nav__link site-nav__mobile-link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="site-nav__item site-nav__mobile-item">
+                        <a class="site-nav__link site-nav__mobile-link" href="./portfolio.html" target="_self" rel="noopener noreferrer nofollow">Портфолио</a>
+                    </li>
+                    <li class="site-nav__item site-nav__mobile-item">
+                        <a class="site-nav__link site-nav__mobile-link" href="">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+                <ul class="site-nav site-nav__mobile list">
+                    <li class="site-nav__item site-nav__mobile-item">
+                        <a class="site-nav__link site-nav__link--color site-nav__mobile--tel" href="tel:+380961111111">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="site-nav__item site-nav__mobile-item">
+                        <a class="site-nav__link site-nav__link--color site-nav__mobile--mail" href="mailto:info@devstudio.com">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+                <div class="mobile__social">
+                    <ul class="mobile__list list">
+                        <li class="mobile__item">
+                            <a class="mobile__link" href="">Instagram</a>
+                        </li>
+                        <li class="mobile__item">
+                            <a class="mobile__link" href="">Twitter</a>
+                        </li>
+                        <li class="mobile__item">
+                            <a class="mobile__link" href="">Facebook</a>
+                        </li>
+                        <li class="mobile__item">
+                            <a class="mobile__link mobile__link--border" href="">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

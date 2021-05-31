@@ -1,7 +1,12 @@
 .port__list{
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    @media screen and (min-width:768px){
+        justify-content: center;
+        margin-bottom: 50px;
+    }
 }
 .port__item:not(:last-child){
     margin-right: 8px;
@@ -30,12 +35,14 @@
     background-color: var(--accent-text-color);
     color: var(--background-color-list);
 }
-.port__list{
-    display: flex;
-    justify-content: center;
-}
+
 .port__item:not(:last-child){
     margin-right: 8px;
+}
+.port__item--position{
+    @media screen and (max-width:767px){
+    margin-top: 15px;
+    }
 }
 .port__about{
     padding-top: 20px;

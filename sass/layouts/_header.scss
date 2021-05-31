@@ -1,8 +1,32 @@
 .header-content{
     letter-spacing: 0.02em;
     border-bottom: 1px solid #ECECEC;
+    @media screen and (max-width:767px){
+        display: none;
+    }
 }
 .header-content .container{
     display: flex;
     align-items: center;
 }
+.header__mobile{
+    display: flex;
+    @media screen and (min-width:768px){
+        display: none;
+    }
+}
+.header__burger{
+    position: absolute;
+    right: 15px;
+    padding-top: 10px;
+    color: var(--primary-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{
+        color: var(--accent-text-color);
+    }
+}
+.header__svg{
+    fill: currentColor;   
+}
+// @media (min-width: 991px) and (max-width: 1199px)
