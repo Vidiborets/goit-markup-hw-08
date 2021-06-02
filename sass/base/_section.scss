@@ -35,6 +35,11 @@
     
 }
 .section__footer--subscrib{
+    @media screen and (max-width:767px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     @media screen and (max-width:1199px){
         text-align: center;
     }

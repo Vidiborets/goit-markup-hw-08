@@ -66,13 +66,11 @@
     margin-right: 50px;
     }
 } 
- 
 .site-nav__mobile{
     display: block;
-    margin-top: 48px;
 }
-.site-nav__mobile-item{
-    margin-left: 40px;
+.site-nav__contact{
+    margin-top: auto;
 }
 .site-nav__mobile-item:not(:last-child){
     margin-bottom: 32px;
@@ -83,7 +81,6 @@
     padding: 0;
 }
 .site-nav__mobile--tel{
-    margin-top: 150px;
     padding: 0;
     font-weight: 500;
     font-size: 34px;

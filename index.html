@@ -17,8 +17,10 @@
             <div class="header__mobile">
                 <a class="icon" href="./index.html"><span class="icon__text">Web</span>Studio</a>
                     <button type="button" class="mobile__button is-open" data-menu-button aria-expanded="false">
-                        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <svg class="button__mobile--svg" width="40" height="40" aria-label="Переключатель мобильного меню">
                             <use class="header__svg is-open" href="./images/icons.svg#icon-burger"></use>
+                        </svg>
+                        <svg class="button__mobile--close" width="40" height="40" aria-label="Переключатель мобильного меню">
                             <use class="mobile__svg is-open" href="./images/icons.svg#icon-burger-close"></use>
                         </svg>
                     </button>
@@ -417,49 +419,43 @@
         </div>
     </footer>
         <div class="mobile__block is-open" data-menu>
-            <div class="moblie-content">
-                <nav class="nav">
-                    <ul class="site-nav site-nav__mobile list">
-                        <li class="site-nav__item site-nav__mobile-item">
-                            <a class="site-nav__link site-nav__mobile-link" href="">Студия</a>
-                        </li>
-                        <li class="site-nav__item site-nav__mobile-item">
-                            <a class="site-nav__link site-nav__mobile-link" href="./portfolio.html" target="_self" rel="noopener noreferrer nofollow">Портфолио</a>
-                        </li>
-                        <li class="site-nav__item site-nav__mobile-item">
-                            <a class="site-nav__link site-nav__mobile-link" href="">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-                    <ul class="site-nav site-nav__mobile list">
-                        <li class="site-nav__item site-nav__mobile-item">
-                            <a class="site-nav__link site-nav__link--color site-nav__mobile--tel" href="tel:+380961111111">
+            <ul class="site-nav site-nav__mobile list">
+                <li class="site-nav__item site-nav__mobile-item">
+                    <a class="site-nav__link site-nav__mobile-link" href="">Студия</a>
+                </li>
+                <li class="site-nav__item site-nav__mobile-item">
+                    <a class="site-nav__link site-nav__mobile-link" href="./portfolio.html" target="_self" rel="noopener noreferrer nofollow">Портфолио</a>
+                </li>
+                <li class="site-nav__item site-nav__mobile-item">
+                    <a class="site-nav__link site-nav__mobile-link" href="">Контакты</a>
+                </li>
+            </ul>
+            <ul class="site-nav site-nav__contact list">
+                <li class="site-nav__item site-nav__mobile-item">
+                    <a class="site-nav__link site-nav__link--color site-nav__mobile--tel" href="tel:+380961111111">
                                 +38 096 111 11 11
-                            </a>
-                        </li>
-                        <li class="site-nav__item site-nav__mobile-item">
-                            <a class="site-nav__link site-nav__link--color site-nav__mobile--mail" href="mailto:info@devstudio.com">
+                    </a>
+                </li>
+                <li class="site-nav__item site-nav__mobile-item">
+                    <a class="site-nav__link site-nav__link--color site-nav__mobile--mail" href="mailto:info@devstudio.com">
                                 info@devstudio.com
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="mobile__social">
-                        <ul class="mobile__list list">
-                            <li class="mobile__item">
-                                <a class="mobile__link" href="">Instagram</a>
-                            </li>
-                            <li class="mobile__item">
-                                <a class="mobile__link" href="">Twitter</a>
-                            </li>
-                            <li class="mobile__item">
-                                <a class="mobile__link" href="">Facebook</a>
-                            </li>
-                            <li class="mobile__item">
-                                <a class="mobile__link mobile__link--border" href="">LinkedIn</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="mobile__social mobile__list list">
+                <li class="mobile__item">
+                    <a class="mobile__link" href="">Instagram</a>
+                </li>
+                <li class="mobile__item">
+                    <a class="mobile__link" href="">Twitter</a>
+                </li>
+                <li class="mobile__item">
+                    <a class="mobile__link" href="">Facebook</a>
+                </li>
+                <li class="mobile__item">
+                    <a class="mobile__link mobile__link--border" href="">LinkedIn</a>
+                </li>
+            </ul>
         </div>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -508,8 +504,9 @@
                         <label class="modal__checkbox">
                             <input class="visually-hidden modal__lic" type="checkbox" name="checkbox">
                             <span class="modal__lic"></span>
-                            <span class="modal__text-lic">Соглашаюсь с рассылкой и принимаю</span>
-                            <a class="modal__link-lic" href="#">Условия договора</a>
+                            <span class="modal__text-lic">Соглашаюсь с рассылкой и принимаю
+                                <a class="modal__link-lic" href="#">Условия договора</a>
+                            </span>
                         </label>
                     </div>
                     <div class="modal__send">
