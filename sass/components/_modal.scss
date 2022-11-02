@@ -137,9 +137,10 @@
     background-repeat: no-repeat;
     width: 16px;
     height: 15px;
-    margin-right: 7px;
+    
     &:checked + .modal__lic{
         background-image: url(../images/checkboxcheck.svg);
+
         background-origin: border-box;
         background-size: contain;
         background-color: var(--accent-text-color);
